@@ -89,7 +89,7 @@ if (ref.indexOf('google.com') != -1 || ref.indexOf('youtube.com') != -1) {
     overlay.appendChild(message);
 
     // Hiển thị thông báo từng chữ một
-    var text = 'Bạn đang ở bước';
+    var text = 'BẠN ĐANG Ở BƯỚC THỨ NHẤT, CÒN 2 BƯỚC NỮA';
     var i = 0;
     var interval = setInterval(function() {
         if (i < text.length) {
