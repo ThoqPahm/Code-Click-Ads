@@ -1,0 +1,17 @@
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9768615911852586"
+     crossorigin="anonymous"></script>
+<!-- CBR250RR -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9768615911852586"
+     data-ad-slot="9860232089"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<center><button id="button2" class="disabled">CLICK VÀO Q.CÁO BÊN TRÊN</button><center>
+<script>var button1=document.getElementById("button1"),button2=document.getElementById("button2"),referrer=document.referrer;function enableButton2(){button2.classList.remove("disabled"),button2.classList.add("enabled"),button2.innerText="NHẬN LINK",button2.addEventListener("click",(function(){window.location.href="https://www.marketingnumber.one/p/dg4gs.html"}))}function disableButton2(){button2.classList.remove("enabled"),button2.classList.add("disabled"),button2.innerText="CLICK VÀO Q.CÁO BÊN TRÊN"}button1.addEventListener("click",(function(){button2.scrollIntoView({behavior:"smooth"})})),referrer.includes("google")||referrer.includes("youtube")?(window.addEventListener("blur",(function(){("A"==document.activeElement.tagName||document.hidden)&&enableButton2()})),window.addEventListener("click",(function(t){"A"!=t.target.tagName||t.target.hasAttribute("target")||setTimeout(enableButton2,2500)})),window.addEventListener("visibilitychange",(function(){document.hidden?disableButton2():setTimeout(enableButton2,2500)}))):enableButton2(),(referrer.includes("google")||referrer.includes("youtube"))&&(button1.style.display="block",button2.style.display="block");</script>
+  <style>
+  .disabled{background-color: gray;pointer-events: none}.enabled{background-color: lime}#button1, #button2{display: none}#button1, #button2{display: inline-block;padding: 30px 40px;font-size: 20px;cursor: pointer;text-align: center;text-decoration: none;outline: none;color: #fff;border-radius: 12px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);border: 2px dashed #000}button:before{content: "";position: absolute;top: -2px;right: -2px;bottom: -2px;left: -2px;border-radius: inherit;background: inherit;z-index: -1;animation: dashed 2s linear infinite}button#button1{background-color: skyblue;color: black}button#button1:hover{background-color: #008CBA;color: white}button#button2.disabled{background-color: gray;color: white}button#button2.enabled{background-color: lime;color: black}
+    </style>
