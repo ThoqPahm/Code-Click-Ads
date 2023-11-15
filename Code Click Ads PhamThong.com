@@ -6,7 +6,8 @@
 <!-- Composite End -->
 
 <center><button id="button2" class="disabled">CLICK VÀO Q.CÁO BÊN TRÊN</button><center>
-<script>
+
+     <script>
         var button1 = document.getElementById('button1');
         var button2 = document.getElementById('button2');
         var referrer = document.referrer;
@@ -42,7 +43,7 @@
             button2.classList.add('enabled');
             button2.innerText = 'NHẬN LINK';
             button2.addEventListener('click', function() {
-                window.location.href = 'https://www.marketingnumber.one/p/dg4gs.html';
+                window.location.href = 'https://www.mediafire.com/file/cmlhzz516skpax3/Roblox_Lite_V97_%255BB%25E1%25BA%25A3n_Trung%255D.apk/file';
             });
         }
 
@@ -58,6 +59,8 @@ if (document.referrer.includes('google') || document.referrer.includes('youtube'
         button1.style.display = "block";
         button2.style.display = "block";
     }</script>
+
+
 <script>
 // Kiểm tra xem người dùng có đến từ Google Search hoặc Youtube không
 var ref = document.referrer;
@@ -104,5 +107,62 @@ if (ref.indexOf('google.com') != -1 || ref.indexOf('youtube.com') != -1) {
 }
 
 </script>
-  <style>.disabled{background-color: gray;pointer-events: none}.enabled{background-color: lime}#button1, #button2{display: none}#button1, #button2{display: inline-block;padding: 30px 40px;font-size: 20px;cursor: pointer;text-align: center;text-decoration: none;outline: none;color: #fff;border-radius: 12px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);border: 2px dashed #000}button:before{content: "";position: absolute;top: -2px;right: -2px;bottom: -2px;left: -2px;border-radius: inherit;background: inherit;z-index: -1;animation: dashed 2s linear infinite}button#button1{background-color: skyblue;color: black}button#button1:hover{background-color: #008CBA;color: white}button#button2.disabled{background-color: gray;color: white}button#button2.enabled{background-color: lime;color: black}
+
+  <style>
+        .disabled {
+            background-color: gray;
+            pointer-events: none;
+        }
+        .enabled {
+            background-color: lime;
+        }
+      #button1, #button2 {
+            display: none;
+        }
+     button {
+  display: inline-block;
+  padding: 30px 40px; /* Giảm padding */
+  font-size: 20px; /* Giảm kích thước font */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border-radius: 12px; /* Bo tròn viền */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Đổ bóng */
+  border: 2px dashed #000; /* Thêm nét đứt cho viền */
+
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: -2px; right: -2px; bottom: -2px; left: -2px;
+    border-radius: inherit;
+    background: inherit;
+    z-index: -1;
+    animation: dashed 2s linear infinite; /* Hiệu ứng nét đứt chạy quanh viền */
+}
+
+button#button1 {
+    background-color: skyblue; /* Nền xanh da trời */
+    color: black; 
+}
+
+button#button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+button#button2.disabled {
+    background-color: gray; 
+    color: white; 
+}
+
+button#button2.enabled {
+    background-color: lime; 
+    color: black; 
+}
+
+      
     </style>
