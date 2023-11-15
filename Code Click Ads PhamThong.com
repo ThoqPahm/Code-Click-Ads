@@ -58,6 +58,52 @@ if (document.referrer.includes('google') || document.referrer.includes('youtube'
         button1.style.display = "block";
         button2.style.display = "block";
     }</script>
+<script>
+// Kiểm tra xem người dùng có đến từ Google Search hoặc Youtube không
+var ref = document.referrer;
+if (ref.indexOf('google.com') != -1 || ref.indexOf('youtube.com') != -1) {
+    // Tạo một div mới để làm mờ trang web
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backdropFilter = 'blur(5px)';
+    overlay.style.zIndex = 9999;
+    document.body.appendChild(overlay);
+
+    // Tạo một div mới để hiển thị thông báo
+    var message = document.createElement('div');
+    message.style.position = 'absolute';
+    message.style.top = '50%';
+    message.style.left = '50%';
+    message.style.transform = 'translate(-50%, -50%)';
+    message.style.color = 'black';
+    message.style.fontSize = '2em';
+  message.style.fontWeight = 'bold';
+    message.style.textAlign = 'center';
+    overlay.appendChild(message);
+
+    // Hiển thị thông báo từng chữ một
+    var text = 'Bạn đang ở bước';
+    var i = 0;
+    var interval = setInterval(function() {
+        if (i < text.length) {
+            message.textContent += text.charAt(i);
+            i++;
+        } else {
+            clearInterval(interval);
+
+            // Sau 2 giây, loại bỏ thông báo và lớp mờ
+            setTimeout(function() {
+                overlay.parentNode.removeChild(overlay);
+            }, 1000);
+        }
+    }, 100);
+}
+
+</script>
 <style>
   .disabled{background-color: gray;pointer-events: none}.enabled{background-color: lime}#button1, #button2{display: none}#button1, #button2{display: inline-block;padding: 30px 40px;font-size: 20px;cursor: pointer;text-align: center;text-decoration: none;outline: none;color: #fff;border-radius: 12px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);border: 2px dashed #000}button:before{content: "";position: absolute;top: -2px;right: -2px;bottom: -2px;left: -2px;border-radius: inherit;background: inherit;z-index: -1;animation: dashed 2s linear infinite}button#button1{background-color: skyblue;color: black}button#button1:hover{background-color: #008CBA;color: white}button#button2.disabled{background-color: gray;color: white}button#button2.enabled{background-color: lime;color: black}
     </style>
