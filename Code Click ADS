@@ -11,7 +11,58 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <center><button id="button2" class="disabled">CLICK VÀO Q.CÁO BÊN TRÊN</button><center>
-<script>var button1=document.getElementById("button1"),button2=document.getElementById("button2"),referrer=document.referrer;function enableButton2(){button2.classList.remove("disabled"),button2.classList.add("enabled"),button2.innerText="NHẬN LINK",button2.addEventListener("click",(function(){window.location.href="https://www.marketingnumber.one/p/dg4gs.html"}))}function disableButton2(){button2.classList.remove("enabled"),button2.classList.add("disabled"),button2.innerText="CLICK VÀO Q.CÁO BÊN TRÊN"}button1.addEventListener("click",(function(){button2.scrollIntoView({behavior:"smooth"})})),referrer.includes("google")||referrer.includes("youtube")?(window.addEventListener("blur",(function(){("A"==document.activeElement.tagName||document.hidden)&&enableButton2()})),window.addEventListener("click",(function(t){"A"!=t.target.tagName||t.target.hasAttribute("target")||setTimeout(enableButton2,2500)})),window.addEventListener("visibilitychange",(function(){document.hidden?disableButton2():setTimeout(enableButton2,2500)}))):enableButton2(),(referrer.includes("google")||referrer.includes("youtube"))&&(button1.style.display="block",button2.style.display="block");</script>
+<script>
+        var button1 = document.getElementById('button1');
+        var button2 = document.getElementById('button2');
+        var referrer = document.referrer;
+
+          button1.addEventListener('click', function() {
+            button2.scrollIntoView({behavior: "smooth"}); // Thêm hiệu ứng cuộn mượt
+        });
+
+        if (referrer.includes('google') || referrer.includes('youtube')) {
+            window.addEventListener('blur', function() {
+                if (document.activeElement.tagName == 'A' || document.hidden) {
+                    enableButton2();
+                }
+            });
+            window.addEventListener('click', function(event) {
+                if (event.target.tagName == 'A' && !event.target.hasAttribute('target')) {
+                    setTimeout(enableButton2, 2500); // Lưu trạng thái trong 10 giây
+                }
+            });
+            window.addEventListener('visibilitychange', function() {
+                if (!document.hidden) {
+                    setTimeout(enableButton2, 2500); // Lưu trạng thái trong 10 giây
+                } else {
+                    disableButton2(); // Ngăn chặn việc chuyển từ xám sang xanh khi nhấn nút home
+                }
+            });
+        } else {
+            enableButton2();
+        }
+
+        function enableButton2() {
+            button2.classList.remove('disabled');
+            button2.classList.add('enabled');
+            button2.innerText = 'NHẬN LINK';
+            button2.addEventListener('click', function() {
+                window.location.href = 'https://www.marketingnumber.one/p/dg4gs.html';
+            });
+        }
+
+        function disableButton2() {
+            button2.classList.remove('enabled');
+            button2.classList.add('disabled');
+            button2.innerText = 'CLICK VÀO Q.CÁO BÊN TRÊN';
+        }
+    </script>
+  
+  <script>
+if (document.referrer.includes('google') || document.referrer.includes('youtube')) {
+        button1.style.display = "block";
+        button2.style.display = "block";
+    }</script>
 <script>var ref=document.referrer;if(-1!=ref.indexOf("google.com")||-1!=ref.indexOf("youtube.com")){var overlay=document.createElement("div");overlay.style.position="fixed",overlay.style.top=0,overlay.style.left=0,overlay.style.width="100%",overlay.style.height="100%",overlay.style.backdropFilter="blur(5px)",overlay.style.zIndex=9999,document.body.appendChild(overlay);var message=document.createElement("div");message.style.position="absolute",message.style.top="50%",message.style.left="50%",message.style.transform="translate(-50%, -50%)",message.style.color="black",message.style.fontSize="2em",message.style.fontWeight="bold",message.style.textAlign="center",overlay.appendChild(message);var text="BẠN ĐANG Ở BƯỚC THỨ NHẤT, CÒN 2 BƯỚC NỮA",i=0,interval=setInterval((function(){i<text.length?(message.textContent+=text.charAt(i),i++):(clearInterval(interval),setTimeout((function(){overlay.parentNode.removeChild(overlay)}),1e3))}),100)}</script> 
 <style>
   .disabled{background-color: gray;pointer-events: none}.enabled{background-color: lime}#button1, #button2{display: none}#button1, #button2{display: inline-block;padding: 30px 40px;font-size: 20px;cursor: pointer;text-align: center;text-decoration: none;outline: none;color: #fff;border-radius: 12px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);border: 2px dashed #000}button:before{content: "";position: absolute;top: -2px;right: -2px;bottom: -2px;left: -2px;border-radius: inherit;background: inherit;z-index: -1;animation: dashed 2s linear infinite}button#button1{background-color: skyblue;color: black}button#button1:hover{background-color: #008CBA;color: white}button#button2.disabled{background-color: gray;color: white}button#button2.enabled{background-color: lime;color: black}
